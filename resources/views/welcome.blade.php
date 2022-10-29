@@ -10,4 +10,15 @@
             </div>
         </div>
     </div>
+
+    @foreach ($users as $user)
+
+    {($user->name)}
+
+    @empty
+
+    <p>No blog available!</p>
+    @endforelse
+
 @endsection
+
